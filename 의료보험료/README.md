@@ -1,4 +1,4 @@
-# 🏥 의료 보험료 예측 프로젝트 (Medical Cost Prediction)
+# 의료 보험료 예측 프로젝트 (Medical Cost Prediction)
 
 ## 📌 프로젝트 개요
 - **데이터셋**: Kaggle - Medical Cost Personal Dataset  

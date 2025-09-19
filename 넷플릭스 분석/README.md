@@ -69,6 +69,6 @@
 
 4️⃣ 활용 기술
 
-        - Python: Pandas, Numpy, Scikit-learn (TF-IDF, cosine similarity)
-        - 시각화: Matplotlib, Seaborn, WordCloud
-        - 기타: 텍스트 처리, 추천 함수 구현
+     - Python: Pandas, Numpy, Scikit-learn (TF-IDF, cosine similarity)
+     - 시각화: Matplotlib, Seaborn, WordCloud
+     - 기타: 텍스트 처리, 추천 함수 구현

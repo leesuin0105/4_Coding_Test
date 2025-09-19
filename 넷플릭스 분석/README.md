@@ -5,30 +5,33 @@
     - 주요 컬럼: title, type, country, date_added, release_year, rating, listed_in, description 등
 
 1️⃣ 프로젝트 개요
+
 - Netflix 콘텐츠 카탈로그 데이터를 분석하여 작품 유형·국가·연도·장르별 특징을 탐색
 - 텍스트 기반 간단한 추천 시스템(TF-IDF + 코사인 유사도) 구현
 - 시각화와 추천 함수를 통해 Netflix 콘텐츠 소비 구조를 이해
 
 
 2️⃣ 데이터 및 분석 과정
-1. 데이터 전처리
-    - date_added → datetime 변환 및 year_added, month_added 파생
-    - 결측치 처리 (country, director, cast 등)
-    - rating을 연령대 그룹(Kids/Teens/Adults 등)으로 재분류
 
-2. 탐색적 분석 & 시각화
-    - Movie vs TV Show 비율
-    - 연도·월별 콘텐츠 증가 추이
-    - 국가별 콘텐츠 생산 추이 및 연령 타깃
-    - 장르/세부 장르 트렌드 변화
-    - 워드클라우드로 설명(description) 핵심 키워드 도출
+    1. 데이터 전처리
+        - date_added → datetime 변환 및 year_added, month_added 파생
+        - 결측치 처리 (country, director, cast 등)
+        - rating을 연령대 그룹(Kids/Teens/Adults 등)으로 재분류
 
-3. 추천 시스템 구현
-    - listed_in(장르) ×2 가중 + description 텍스트 결합 후 TF-IDF 벡터화
-    - 코사인 유사도를 기반으로 유사 작품 추천
+    2. 탐색적 분석 & 시각화
+        - Movie vs TV Show 비율
+        - 연도·월별 콘텐츠 증가 추이
+        - 국가별 콘텐츠 생산 추이 및 연령 타깃
+        - 장르/세부 장르 트렌드 변화
+        - 워드클라우드로 설명(description) 핵심 키워드 도출
+
+    3. 추천 시스템 구현
+        - listed_in(장르) ×2 가중 + description 텍스트 결합 후 TF-IDF 벡터화
+        - 코사인 유사도를 기반으로 유사 작품 추천
 
 
 3️⃣ 주요 성과 및 인사이트
+
     1. 콘텐츠 공급 구조 변화
         - 연도별 공급 추세
         - 2015~2020년 사이 Movie보다 TV Show가 급격히 증가 → 오리지널 시리즈 투자 확대와 글로벌 시장 공략 의도와 연결 가능.
